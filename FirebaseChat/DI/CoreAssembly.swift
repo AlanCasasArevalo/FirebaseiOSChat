@@ -11,6 +11,7 @@ import UIKit
 final public class CoreAssembly {
     
     private let navigationController: UINavigationController
+    private(set) lazy var loginAssembly = LoginAssembly()
         
     public init(navigationController: UINavigationController) {
         self.navigationController = navigationController
