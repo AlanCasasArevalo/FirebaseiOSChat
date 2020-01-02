@@ -1,5 +1,5 @@
 //
-//  NibName.swift
+//  BaseProvider.swift
 //  FirebaseChat
 //
 //  Created by Alan Casas on 02/01/2020.
@@ -8,6 +8,8 @@
 
 import Foundation
 
-struct NibName {
-    static let driverViewCell = "DriverViewCell"
+protocol BaseProviderProtocol {
+}
+
+internal class BaseProvider: BaseProviderProtocol {
 }

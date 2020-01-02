@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		5177365123BE6BE3004688E5 /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177365023BE6BE3004688E5 /* AppAssembly.swift */; };
 		5177365323BE6BFE004688E5 /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177365223BE6BFE004688E5 /* CoreAssembly.swift */; };
-		5177366123BE7466004688E5 /* NibName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177366023BE7466004688E5 /* NibName.swift */; };
 		5177366323BE7479004688E5 /* UIViewControllers+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177366223BE7479004688E5 /* UIViewControllers+Alerts.swift */; };
 		5177366523BE7495004688E5 /* Array+Remove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177366423BE7495004688E5 /* Array+Remove.swift */; };
 		5177366723BE74F7004688E5 /* String+ValidUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177366623BE74F7004688E5 /* String+ValidUrl.swift */; };
 		5177366923BE7518004688E5 /* Dictionary+Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177366823BE7518004688E5 /* Dictionary+Encodable.swift */; };
+		5177366E23BE7625004688E5 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177366D23BE7625004688E5 /* BasePresenter.swift */; };
+		5177367023BE7690004688E5 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177366F23BE7690004688E5 /* BaseRouter.swift */; };
+		5177367223BE76AF004688E5 /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177367123BE76AF004688E5 /* BaseInteractor.swift */; };
+		5177367423BE775B004688E5 /* BaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177367323BE775B004688E5 /* BaseProvider.swift */; };
+		5177367623BE77F2004688E5 /* NibName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177367523BE77F2004688E5 /* NibName.swift */; };
+		5177367823BE7903004688E5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177367723BE7903004688E5 /* BaseViewController.swift */; };
 		51E236BB23BE69930018CDC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E236BA23BE69930018CDC6 /* AppDelegate.swift */; };
 		51E236C223BE69940018CDC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51E236C123BE69940018CDC6 /* Assets.xcassets */; };
 		51E236C523BE69940018CDC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51E236C323BE69940018CDC6 /* LaunchScreen.storyboard */; };
@@ -22,11 +27,16 @@
 /* Begin PBXFileReference section */
 		5177365023BE6BE3004688E5 /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
 		5177365223BE6BFE004688E5 /* CoreAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
-		5177366023BE7466004688E5 /* NibName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NibName.swift; path = FirebaseChat/Commons0/Constants0/NibName.swift; sourceTree = SOURCE_ROOT; };
 		5177366223BE7479004688E5 /* UIViewControllers+Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewControllers+Alerts.swift"; sourceTree = "<group>"; };
 		5177366423BE7495004688E5 /* Array+Remove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Remove.swift"; sourceTree = "<group>"; };
 		5177366623BE74F7004688E5 /* String+ValidUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ValidUrl.swift"; sourceTree = "<group>"; };
 		5177366823BE7518004688E5 /* Dictionary+Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Encodable.swift"; sourceTree = "<group>"; };
+		5177366D23BE7625004688E5 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		5177366F23BE7690004688E5 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		5177367123BE76AF004688E5 /* BaseInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractor.swift; sourceTree = "<group>"; };
+		5177367323BE775B004688E5 /* BaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProvider.swift; sourceTree = "<group>"; };
+		5177367523BE77F2004688E5 /* NibName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibName.swift; sourceTree = "<group>"; };
+		5177367723BE7903004688E5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		51E236B723BE69930018CDC6 /* FirebaseChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51E236BA23BE69930018CDC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51E236C123BE69940018CDC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +67,7 @@
 		5177365823BE7418004688E5 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				5177366023BE7466004688E5 /* NibName.swift */,
+				5177367523BE77F2004688E5 /* NibName.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -82,6 +92,25 @@
 			path = DI;
 			sourceTree = "<group>";
 		};
+		5177366B23BE75B5004688E5 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		5177366C23BE7610004688E5 /* SuperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				5177367723BE7903004688E5 /* BaseViewController.swift */,
+				5177367123BE76AF004688E5 /* BaseInteractor.swift */,
+				5177366D23BE7625004688E5 /* BasePresenter.swift */,
+				5177366F23BE7690004688E5 /* BaseRouter.swift */,
+				5177367323BE775B004688E5 /* BaseProvider.swift */,
+			);
+			path = SuperClasses;
+			sourceTree = "<group>";
+		};
 		51E236AE23BE69930018CDC6 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				51E236BA23BE69930018CDC6 /* AppDelegate.swift */,
+				5177366C23BE7610004688E5 /* SuperClasses */,
+				5177366B23BE75B5004688E5 /* Presentation */,
 				5177365723BE73F3004688E5 /* Commons */,
 				5177366A23BE7527004688E5 /* DI */,
 				51E236C123BE69940018CDC6 /* Assets.xcassets */,
@@ -202,14 +233,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5177367823BE7903004688E5 /* BaseViewController.swift in Sources */,
 				5177366723BE74F7004688E5 /* String+ValidUrl.swift in Sources */,
+				5177366E23BE7625004688E5 /* BasePresenter.swift in Sources */,
 				5177365323BE6BFE004688E5 /* CoreAssembly.swift in Sources */,
 				5177366523BE7495004688E5 /* Array+Remove.swift in Sources */,
 				5177366923BE7518004688E5 /* Dictionary+Encodable.swift in Sources */,
 				51E236BB23BE69930018CDC6 /* AppDelegate.swift in Sources */,
-				5177366123BE7466004688E5 /* NibName.swift in Sources */,
+				5177367623BE77F2004688E5 /* NibName.swift in Sources */,
+				5177367023BE7690004688E5 /* BaseRouter.swift in Sources */,
+				5177367223BE76AF004688E5 /* BaseInteractor.swift in Sources */,
 				5177365123BE6BE3004688E5 /* AppAssembly.swift in Sources */,
 				5177366323BE7479004688E5 /* UIViewControllers+Alerts.swift in Sources */,
+				5177367423BE775B004688E5 /* BaseProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
