@@ -10,18 +10,15 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-    var window: UIWindow?
-
+    
+    let appAssembly = AppAssembly()
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        window = UIWindow(frame: UIScreen.main.bounds)
-        let viewController = UIViewController()
-        viewController.view.backgroundColor = .cyan
-        let navVC = UINavigationController(rootViewController: viewController)
-        
-        window?.rootViewController = navVC
-        window?.makeKeyAndVisible()
+        let initialVC = UIViewController()
+        appAssembly.window.rootViewController = appAssembly.navigationController
+        appAssembly.navigationController.pushViewController(initialVC, animated: false)
+        appAssembly.window.makeKeyAndVisible()
         
         return true
     }
