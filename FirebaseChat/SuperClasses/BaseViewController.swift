@@ -9,6 +9,11 @@
 import UIKit
 
 protocol BaseViewControllerProtocol {
+    func showLoader()
+    func hideLoader()
+    func navigateToViewController(viewController: UIViewController)
+    func presentModalWithNavigationControllerForViewController(viewController: UIViewController)
+    
 }
 
 class BaseViewController<PresenterProtocol: Any>: UIViewController, BaseViewControllerProtocol{
@@ -16,8 +21,32 @@ class BaseViewController<PresenterProtocol: Any>: UIViewController, BaseViewCont
     internal var presenter: PresenterProtocol?
     
     convenience init(presenter: PresenterProtocol? = nil) {
-         self.init()
-         self.presenter = presenter
-     }
+        self.init()
+        self.presenter = presenter
+    }
+    
+    
+    func showLoader() {}
+    func hideLoader() {}
+    
+    func navigateToViewController(viewController: UIViewController) {
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    func navigateToViewController(viewController: UIViewController, animated: Bool) {
+        self.navigationController?.pushViewController(viewController, animated: animated)
+    }
+    
+    func presentModalWithNavigationControllerForViewController(viewController: UIViewController) {
+        let navigationController = UINavigationController(rootViewController: viewController)
+        navigationController.modalPresentationStyle = .overCurrentContext
+        present(navigationController, animated: true, completion: nil)
+    }
+    
+    func presentModalWithNavigationControllerForViewControllerOverFullScreen(viewController: UIViewController) {
+        let navigationController = UINavigationController(rootViewController: viewController)
+        navigationController.modalPresentationStyle = .overFullScreen
+        present(navigationController, animated: true, completion: nil)
+    }
     
 }
