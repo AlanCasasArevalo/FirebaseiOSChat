@@ -1,5 +1,5 @@
 //
-//  LoginRouter.swift
+//  WelcomeRouter.swift
 //  FirebaseChat
 //
 //  Created by Alan Casas on 02/01/2020.
@@ -8,9 +8,9 @@
 
 import Foundation
 
-protocol LoginRouterProtocol {
+protocol WelcomeRouterProtocol {
     
 }
 
-class LoginRouter : BaseRouter<LoginViewControllerProtocol>, LoginRouterProtocol  {
+class WelcomeRouter : BaseRouter<WelcomeViewControllerProtocol>, WelcomeRouterProtocol  {
 }

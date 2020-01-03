@@ -1,5 +1,5 @@
 //
-//  LoginProvider.swift
+//  WelcomeProvider.swift
 //  FirebaseChat
 //
 //  Created by Alan Casas on 02/01/2020.
@@ -8,9 +8,9 @@
 
 import Foundation
 
-protocol LoginProviderProtocol {
+protocol WelcomeProviderProtocol {
 }
 
-class LoginProvider : LoginProviderProtocol {
+class WelcomeProvider : WelcomeProviderProtocol {
     
 }
