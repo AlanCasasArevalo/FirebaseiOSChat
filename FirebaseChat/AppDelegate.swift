@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         appAssembly.window.rootViewController = appAssembly.navigationController
         appAssembly.navigationController.pushViewController(initialVC, animated: false)
         appAssembly.window.makeKeyAndVisible()
+        setupAppearance()
         
         return true
     }
@@ -32,5 +33,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidBecomeActive(_ application: UIApplication) {}
     
     func applicationWillTerminate(_ application: UIApplication) {}
+
+    func setupAppearance () {
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.clear], for: .normal)
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.clear], for: UIControl.State.highlighted)
+    }
 }
 
