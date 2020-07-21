@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol BaseProviderProtocol {
+protocol BaseProviderProtocol: class {
 }
 
 internal class BaseProvider: BaseProviderProtocol {

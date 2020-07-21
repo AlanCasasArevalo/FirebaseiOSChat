@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol BasePresenterProtocol {
+protocol BasePresenterProtocol: class {
 }
 
 class BasePresenter <ViewProtocol: Any, RouterProtocol: Any, InteractorProtocol: Any>: NSObject, BasePresenterProtocol {

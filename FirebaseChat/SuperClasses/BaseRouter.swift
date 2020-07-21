@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol BaseRouterProtocol {
+protocol BaseRouterProtocol: class {
 
 }
 

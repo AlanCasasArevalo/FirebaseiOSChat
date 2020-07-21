@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol BaseViewControllerProtocol {
+protocol BaseViewControllerProtocol: class {
     func showLoader()
     func hideLoader()
     func navigateToViewController(viewController: UIViewController)
@@ -16,7 +16,7 @@ protocol BaseViewControllerProtocol {
     
 }
 
-class BaseViewController<PresenterProtocol: Any>: UIViewController, BaseViewControllerProtocol{
+class BaseViewController<PresenterProtocol: Any>: UIViewController, BaseViewControllerProtocol {
     
     internal var presenter: PresenterProtocol?
     
