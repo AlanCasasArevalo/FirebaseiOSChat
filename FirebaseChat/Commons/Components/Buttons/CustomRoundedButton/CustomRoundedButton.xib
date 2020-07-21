@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomRoundedButton" customModule="FirebaseChat" customModuleProvider="target">
+            <connections>
+                <outlet property="customButton" destination="HeC-Et-nNt" id="DCO-tV-a2d"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HeC-Et-nNt">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                    <connections>
+                        <action selector="customButtonTapped:" destination="-1" eventType="touchUpInside" id="6ta-je-QOE"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="HeC-Et-nNt" secondAttribute="bottom" id="Dw8-o1-yXz"/>
+                <constraint firstItem="HeC-Et-nNt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="EyX-aA-fZM"/>
+                <constraint firstItem="HeC-Et-nNt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PAw-mN-kaW"/>
+                <constraint firstAttribute="trailing" secondItem="HeC-Et-nNt" secondAttribute="trailing" id="Xbs-ec-hwL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139" y="125"/>
+        </view>
+    </objects>
+</document>

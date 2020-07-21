@@ -10,4 +10,6 @@ import Foundation
 
 struct NibName {
     static let driverViewCell = "DriverViewCell"
+    static let customRoundedButton = "CustomRoundedButton"
+    static let customRoundedTextField = "CustomRoundedTextField"
 }
