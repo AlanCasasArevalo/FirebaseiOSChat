@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol WelcomeProviderProtocol {
+protocol WelcomeProviderProtocol: class {
 }
 
 class WelcomeProvider : WelcomeProviderProtocol {

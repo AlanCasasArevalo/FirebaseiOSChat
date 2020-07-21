@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol WelcomeInteractorProtocol {
+protocol WelcomeInteractorProtocol: class {
 }
 
 class WelcomeInteractor: BaseInteractor<WelcomeProviderProtocol>, WelcomeInteractorProtocol {

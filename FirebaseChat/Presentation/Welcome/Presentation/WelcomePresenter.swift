@@ -8,9 +8,11 @@
 
 import Foundation
 
-protocol WelcomePresenterProtocol {
+protocol WelcomePresenterProtocol: class {
     func viewDidLoad()
     func viewWillAppear()
+    func navigationToRegister()
+    func navigationToLogin()
 }
 
 class WelcomePresenter: BasePresenter<WelcomeViewControllerProtocol, WelcomeRouterProtocol, WelcomeInteractorProtocol>, WelcomePresenterProtocol  {
@@ -29,13 +31,21 @@ class WelcomePresenter: BasePresenter<WelcomeViewControllerProtocol, WelcomeRout
         let welcomeTitle = "⚡️FlashChat"
         var charIndex = 0.0
         for letter in welcomeTitle {
-            Timer.scheduledTimer(withTimeInterval: 0.15 * charIndex , repeats: false) { (timer) in
+            Timer.scheduledTimer(withTimeInterval: 0.15 * charIndex , repeats: false) { [weak self] (timer) in
                 DispatchQueue.main.async {
-                    self.view?.titleLabel.text?.append(letter)
+                    self?.view?.titleLabel.text?.append(letter)
                 }
             }
             charIndex += 1
         }
     }
-    
+
+    func navigationToRegister() {
+        self.router?.navigationToRegister()
+    }
+
+    func navigationToLogin() {
+        self.router?.navigationToLogin()
+    }
+
 }

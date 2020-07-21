@@ -8,9 +8,10 @@
 
 import UIKit
 
-protocol WelcomeViewControllerProtocol {
+protocol WelcomeViewControllerProtocol: class {
     var letter: Character? { set get }
     var titleLabel: UILabel! { set get }
+    func navigationToViewController (viewController: UIViewController)
 }
 
 class WelcomeViewController:  BaseViewController<WelcomePresenterProtocol>, WelcomeViewControllerProtocol {
@@ -30,10 +31,16 @@ class WelcomeViewController:  BaseViewController<WelcomePresenterProtocol>, Welc
     
     
     @IBAction func registerButton(_ sender: UIButton) {
+        self.presenter?.navigationToRegister()
     }
     
     @IBAction func loginButton(_ sender: UIButton) {
+        self.presenter?.navigationToLogin()
     }
-    
-    
+}
+
+extension WelcomeViewController {
+    func navigationToViewController (viewController: UIViewController) {
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
 }
