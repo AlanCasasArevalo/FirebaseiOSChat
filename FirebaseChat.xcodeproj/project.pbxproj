@@ -3,12 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D7A5372C189C591A1DEB32D /* Pods_FirebaseChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C23C14B951DF4EF6F1A94D2 /* Pods_FirebaseChat.framework */; };
 		512FF91B24C621B300DE916C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512FF91924C621B300DE916C /* RegisterViewController.swift */; };
 		512FF91C24C621B300DE916C /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 512FF91A24C621B300DE916C /* RegisterViewController.xib */; };
+		5175CF7424C9561500FFBBA6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5175CF7324C9561500FFBBA6 /* GoogleService-Info.plist */; };
 		5177365123BE6BE3004688E5 /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177365023BE6BE3004688E5 /* AppAssembly.swift */; };
 		5177365323BE6BFE004688E5 /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177365223BE6BFE004688E5 /* CoreAssembly.swift */; };
 		5177366323BE7479004688E5 /* UIViewControllers+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177366223BE7479004688E5 /* UIViewControllers+Alerts.swift */; };
@@ -29,6 +31,7 @@
 		5177368D23BE8098004688E5 /* WelcomeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177368C23BE8098004688E5 /* WelcomeProvider.swift */; };
 		5177369023BF6E71004688E5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177368E23BF6E71004688E5 /* WelcomeViewController.swift */; };
 		5177369123BF6E71004688E5 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5177368F23BF6E71004688E5 /* WelcomeViewController.xib */; };
+		51B939DF24CB2DCF00EFD044 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B939DE24CB2DCF00EFD044 /* RoundedButton.swift */; };
 		51CD70C124C73B7700984BB5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CD70BF24C73B7700984BB5 /* LoginViewController.swift */; };
 		51CD70C224C73B7700984BB5 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51CD70C024C73B7700984BB5 /* LoginViewController.xib */; };
 		51CD70C824C742B900984BB5 /* CustomRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CD70C724C742B900984BB5 /* CustomRoundedButton.swift */; };
@@ -38,21 +41,25 @@
 		51E236C523BE69940018CDC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51E236C323BE69940018CDC6 /* LaunchScreen.storyboard */; };
 		51F3502324C74F21004A9AAB /* CustomRoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F3502224C74F21004A9AAB /* CustomRoundedTextField.swift */; };
 		51F3502524C74F2E004A9AAB /* CustomRoundedTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51F3502424C74F2E004A9AAB /* CustomRoundedTextField.xib */; };
-		CD7F72910F7C18990E3DE89D /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F708080B1E60CCF8C153B /* RegisterInteractor.swift */; };
+		CD7F702692CB2475DE6A15B3 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F7B9A7854D03DD019B71A /* RegisterPresenter.swift */; };
+		CD7F72EC4AA10AC86968971F /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F747F37DBB7C583C749F7 /* RegisterInteractor.swift */; };
 		CD7F7442752BB52DAD50C905 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F72BE994018D15949F736 /* LoginInteractor.swift */; };
 		CD7F746C7BF78E6A72336869 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F73A4EF190E8BAAEA1879 /* LoginRouter.swift */; };
 		CD7F74CCC2F4EA1AA643E893 /* LoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F737AE559D0B4D76D0D48 /* LoginProvider.swift */; };
-		CD7F774087B1FDFD46562669 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F7A0091C30745DF5ED141 /* RegisterPresenter.swift */; };
 		CD7F77819771C0C4A6B1F9CA /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F756AA55A170542787D77 /* LoginPresenter.swift */; };
-		CD7F7CA15B1DF1073ED433DB /* RegisterProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F707017A77BEC2BA0E1AA /* RegisterProvider.swift */; };
-		CD7F7E19E7DD7A0BBBD9288E /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F79594145ED7FE843816A /* RegisterRouter.swift */; };
+		CD7F7CD2E5FF4EEE0BBD258C /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F7CCCA4D3741C8C8F39A9 /* RegisterRouter.swift */; };
+		CD7F7D0261419A3A6A04446B /* String+EmailValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F751638E7EE5983FD87AF /* String+EmailValidation.swift */; };
+		CD7F7ED3BB745CD2143CFB9F /* RegisterProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F7FB5EE636923FF744909 /* RegisterProvider.swift */; };
 		CD7F7F04E6C8F7E9D78D26DD /* RegisterAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F7E6866DF6532E2AC6B72 /* RegisterAssembly.swift */; };
+		CD7F7F12D7F807418EB7C38D /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F75AF108D4FF6A36C971F /* FirebaseManager.swift */; };
 		CD7F7F890A5FAEFAE3AD5ACE /* LoginAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F7383BC952E0519F4C51B /* LoginAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C23C14B951DF4EF6F1A94D2 /* Pods_FirebaseChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		512FF91924C621B300DE916C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		512FF91A24C621B300DE916C /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		5175CF7324C9561500FFBBA6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5177365023BE6BE3004688E5 /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
 		5177365223BE6BFE004688E5 /* CoreAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
 		5177366223BE7479004688E5 /* UIViewControllers+Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewControllers+Alerts.swift"; sourceTree = "<group>"; };
@@ -73,6 +80,7 @@
 		5177368C23BE8098004688E5 /* WelcomeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeProvider.swift; sourceTree = "<group>"; };
 		5177368E23BF6E71004688E5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		5177368F23BF6E71004688E5 /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
+		51B939DE24CB2DCF00EFD044 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		51CD70BF24C73B7700984BB5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		51CD70C024C73B7700984BB5 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		51CD70C724C742B900984BB5 /* CustomRoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRoundedButton.swift; sourceTree = "<group>"; };
@@ -84,16 +92,20 @@
 		51E236C623BE69940018CDC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51F3502224C74F21004A9AAB /* CustomRoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRoundedTextField.swift; sourceTree = "<group>"; };
 		51F3502424C74F2E004A9AAB /* CustomRoundedTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomRoundedTextField.xib; sourceTree = "<group>"; };
-		CD7F707017A77BEC2BA0E1AA /* RegisterProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterProvider.swift; path = ../RegisterProvider.swift; sourceTree = "<group>"; };
-		CD7F708080B1E60CCF8C153B /* RegisterInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterInteractor.swift; path = ../RegisterInteractor.swift; sourceTree = "<group>"; };
+		5CB9018E73F21F57AE03E574 /* Pods-FirebaseChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseChat.release.xcconfig"; path = "Target Support Files/Pods-FirebaseChat/Pods-FirebaseChat.release.xcconfig"; sourceTree = "<group>"; };
+		61D2316FDE318626D1EE0658 /* Pods-FirebaseChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseChat.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseChat/Pods-FirebaseChat.debug.xcconfig"; sourceTree = "<group>"; };
 		CD7F72BE994018D15949F736 /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		CD7F737AE559D0B4D76D0D48 /* LoginProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginProvider.swift; sourceTree = "<group>"; };
 		CD7F7383BC952E0519F4C51B /* LoginAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAssembly.swift; sourceTree = "<group>"; };
 		CD7F73A4EF190E8BAAEA1879 /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		CD7F747F37DBB7C583C749F7 /* RegisterInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
+		CD7F751638E7EE5983FD87AF /* String+EmailValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+EmailValidation.swift"; sourceTree = "<group>"; };
 		CD7F756AA55A170542787D77 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
-		CD7F79594145ED7FE843816A /* RegisterRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterRouter.swift; path = ../RegisterRouter.swift; sourceTree = "<group>"; };
-		CD7F7A0091C30745DF5ED141 /* RegisterPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterPresenter.swift; path = ../RegisterPresenter.swift; sourceTree = "<group>"; };
+		CD7F75AF108D4FF6A36C971F /* FirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		CD7F7B9A7854D03DD019B71A /* RegisterPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		CD7F7CCCA4D3741C8C8F39A9 /* RegisterRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
 		CD7F7E6866DF6532E2AC6B72 /* RegisterAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterAssembly.swift; sourceTree = "<group>"; };
+		CD7F7FB5EE636923FF744909 /* RegisterProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D7A5372C189C591A1DEB32D /* Pods_FirebaseChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,7 +134,7 @@
 		512FF91624C6217E00DE916C /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				CD7F79594145ED7FE843816A /* RegisterRouter.swift */,
+				CD7F7CCCA4D3741C8C8F39A9 /* RegisterRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -129,8 +142,8 @@
 		512FF91724C6218B00DE916C /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				CD7F707017A77BEC2BA0E1AA /* RegisterProvider.swift */,
-				CD7F708080B1E60CCF8C153B /* RegisterInteractor.swift */,
+				CD7F7FB5EE636923FF744909 /* RegisterProvider.swift */,
+				CD7F747F37DBB7C583C749F7 /* RegisterInteractor.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -138,9 +151,9 @@
 		512FF91824C6219F00DE916C /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				CD7F7A0091C30745DF5ED141 /* RegisterPresenter.swift */,
 				512FF91924C621B300DE916C /* RegisterViewController.swift */,
 				512FF91A24C621B300DE916C /* RegisterViewController.xib */,
+				CD7F7B9A7854D03DD019B71A /* RegisterPresenter.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -159,6 +172,7 @@
 				5177365923BE7424004688E5 /* Extensions */,
 				5177365823BE7418004688E5 /* Constants */,
 				51CD70CB24C7494700984BB5 /* Components */,
+				CD7F7754EDDA1FE4F9D21BA1 /* Managers */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -178,6 +192,7 @@
 				5177366423BE7495004688E5 /* Array+Remove.swift */,
 				5177366623BE74F7004688E5 /* String+ValidUrl.swift */,
 				5177366823BE7518004688E5 /* Dictionary+Encodable.swift */,
+				CD7F751638E7EE5983FD87AF /* String+EmailValidation.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -311,6 +326,7 @@
 			children = (
 				51F3502024C74EF8004A9AAB /* TextFields */,
 				51F3501F24C74EE7004A9AAB /* Buttons */,
+				51B939DE24CB2DCF00EFD044 /* RoundedButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -320,6 +336,8 @@
 			children = (
 				51E236B923BE69930018CDC6 /* FirebaseChat */,
 				51E236B823BE69930018CDC6 /* Products */,
+				F0BF8004CF3800ED89BA85AB /* Pods */,
+				85F784349CDCD6F3374BF70B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -334,6 +352,7 @@
 		51E236B923BE69930018CDC6 /* FirebaseChat */ = {
 			isa = PBXGroup;
 			children = (
+				5175CF7324C9561500FFBBA6 /* GoogleService-Info.plist */,
 				51E236BA23BE69930018CDC6 /* AppDelegate.swift */,
 				5177366C23BE7610004688E5 /* SuperClasses */,
 				5177366B23BE75B5004688E5 /* Presentation */,
@@ -380,6 +399,31 @@
 			path = CustomRoundedTextField;
 			sourceTree = "<group>";
 		};
+		85F784349CDCD6F3374BF70B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C23C14B951DF4EF6F1A94D2 /* Pods_FirebaseChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD7F7754EDDA1FE4F9D21BA1 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CD7F75AF108D4FF6A36C971F /* FirebaseManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F0BF8004CF3800ED89BA85AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61D2316FDE318626D1EE0658 /* Pods-FirebaseChat.debug.xcconfig */,
+				5CB9018E73F21F57AE03E574 /* Pods-FirebaseChat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -387,10 +431,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51E236C923BE69940018CDC6 /* Build configuration list for PBXNativeTarget "FirebaseChat" */;
 			buildPhases = (
+				79D6A4F33DF6978A08F2CEF8 /* [CP] Check Pods Manifest.lock */,
 				51E236B323BE69930018CDC6 /* Sources */,
 				51E236B423BE69930018CDC6 /* Frameworks */,
 				51E236B523BE69930018CDC6 /* Resources */,
 				5177365423BE6EFC004688E5 /* ShellScript */,
+				2A96F43781A6A0BD02976637 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -440,6 +486,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51CD70C224C73B7700984BB5 /* LoginViewController.xib in Resources */,
+				5175CF7424C9561500FFBBA6 /* GoogleService-Info.plist in Resources */,
 				51E236C523BE69940018CDC6 /* LaunchScreen.storyboard in Resources */,
 				5177369123BF6E71004688E5 /* WelcomeViewController.xib in Resources */,
 				51F3502524C74F2E004A9AAB /* CustomRoundedTextField.xib in Resources */,
@@ -452,6 +499,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2A96F43781A6A0BD02976637 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirebaseChat/Pods-FirebaseChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirebaseChat/Pods-FirebaseChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirebaseChat/Pods-FirebaseChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5177365423BE6EFC004688E5 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -468,6 +532,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "TAGS=\"TODO:|FIXME:|WARNING:\"\nERRORTAG=\"ERROR:-\"\nfind \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" -or -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$|($ERRORTAG).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"| perl -p -e \"s/($ERRORTAG)/ error: \\$1/\"\n";
+		};
+		79D6A4F33DF6978A08F2CEF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FirebaseChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -487,6 +573,7 @@
 				5177366523BE7495004688E5 /* Array+Remove.swift in Sources */,
 				5177366923BE7518004688E5 /* Dictionary+Encodable.swift in Sources */,
 				51E236BB23BE69930018CDC6 /* AppDelegate.swift in Sources */,
+				51B939DF24CB2DCF00EFD044 /* RoundedButton.swift in Sources */,
 				5177368423BE7DCC004688E5 /* WelcomePresenter.swift in Sources */,
 				51CD70C124C73B7700984BB5 /* LoginViewController.swift in Sources */,
 				5177367623BE77F2004688E5 /* NibName.swift in Sources */,
@@ -500,16 +587,18 @@
 				5177366323BE7479004688E5 /* UIViewControllers+Alerts.swift in Sources */,
 				5177367A23BE7C99004688E5 /* BaseAssembly.swift in Sources */,
 				5177367423BE775B004688E5 /* BaseProvider.swift in Sources */,
-				CD7F7E19E7DD7A0BBBD9288E /* RegisterRouter.swift in Sources */,
-				CD7F7CA15B1DF1073ED433DB /* RegisterProvider.swift in Sources */,
-				CD7F72910F7C18990E3DE89D /* RegisterInteractor.swift in Sources */,
-				CD7F774087B1FDFD46562669 /* RegisterPresenter.swift in Sources */,
 				CD7F7F04E6C8F7E9D78D26DD /* RegisterAssembly.swift in Sources */,
 				CD7F77819771C0C4A6B1F9CA /* LoginPresenter.swift in Sources */,
 				CD7F746C7BF78E6A72336869 /* LoginRouter.swift in Sources */,
 				CD7F7442752BB52DAD50C905 /* LoginInteractor.swift in Sources */,
 				CD7F74CCC2F4EA1AA643E893 /* LoginProvider.swift in Sources */,
 				CD7F7F890A5FAEFAE3AD5ACE /* LoginAssembly.swift in Sources */,
+				CD7F7F12D7F807418EB7C38D /* FirebaseManager.swift in Sources */,
+				CD7F7ED3BB745CD2143CFB9F /* RegisterProvider.swift in Sources */,
+				CD7F72EC4AA10AC86968971F /* RegisterInteractor.swift in Sources */,
+				CD7F7CD2E5FF4EEE0BBD258C /* RegisterRouter.swift in Sources */,
+				CD7F702692CB2475DE6A15B3 /* RegisterPresenter.swift in Sources */,
+				CD7F7D0261419A3A6A04446B /* String+EmailValidation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,8 +734,10 @@
 		};
 		51E236CA23BE69940018CDC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61D2316FDE318626D1EE0658 /* Pods-FirebaseChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SW2XN6A7CB;
 				INFOPLIST_FILE = FirebaseChat/Info.plist;
@@ -656,6 +747,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alancasasarevalo-gmail.FirebaseChat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -663,8 +755,10 @@
 		};
 		51E236CB23BE69940018CDC6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CB9018E73F21F57AE03E574 /* Pods-FirebaseChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SW2XN6A7CB;
 				INFOPLIST_FILE = FirebaseChat/Info.plist;
@@ -674,6 +768,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alancasasarevalo-gmail.FirebaseChat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

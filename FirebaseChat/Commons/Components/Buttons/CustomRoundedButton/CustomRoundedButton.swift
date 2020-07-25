@@ -49,6 +49,9 @@ class CustomRoundedButton: UIButton {
 
     func setTitleColor(color: UIColor, state: UIControl.State) {
         customButton.setTitleColor(color, for: state)
+        customButton.titleLabel?.tintColor = color
+        customButton.titleLabel?.textColor = color
+        customButton.tintColor = color
     }
 
     func setCornerRadius (radius: CGFloat) {
