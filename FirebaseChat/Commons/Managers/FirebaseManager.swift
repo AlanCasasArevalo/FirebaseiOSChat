@@ -25,15 +25,15 @@ class FirebaseManager {
         }
     }
 
-//    func signIn(withEmail: String, password: String, success: @escaping (String?) -> Void, failure: @escaping (String?) -> Void) {
-//        Auth.auth().signIn(withEmail: withEmail, password: password) { (user, error) in
-//            if error != nil {
-//                failure(error?.localizedDescription)
-//            } else {
-//                success("Log in Success")
-//            }
-//        }
-//    }
+    func signIn(withEmail: String, password: String, success: @escaping (String?) -> Void, failure: @escaping (String?) -> Void) {
+        Auth.auth().signIn(withEmail: withEmail, password: password) { (user, error) in
+            if error != nil {
+                failure(error?.localizedDescription)
+            } else {
+                success("Log in Success")
+            }
+        }
+    }
 
     func getCurrentUserEmail() -> String {
         return Auth.auth().currentUser?.email ?? ""

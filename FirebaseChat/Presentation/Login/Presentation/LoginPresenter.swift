@@ -7,6 +7,7 @@ import Foundation
 protocol LoginPresenterProtocol: class {
     func viewDidLoad()
     func viewWillAppear()
+    func loginWithValidationPassed(email: String, password: String)
 }
 
 class LoginPresenter: BasePresenter<LoginViewControllerProtocol, LoginRouterProtocol, LoginInteractorProtocol>, LoginPresenterProtocol {
@@ -17,6 +18,14 @@ class LoginPresenter: BasePresenter<LoginViewControllerProtocol, LoginRouterProt
 
     func viewWillAppear() {
 
+    }
+
+    func loginWithValidationPassed(email: String, password: String){
+        FirebaseManager.shared.signIn(withEmail: email, password: password, success: { success in
+            
+        }, failure: { error in
+
+        })
     }
 
 }

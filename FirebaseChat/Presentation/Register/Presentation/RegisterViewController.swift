@@ -9,6 +9,7 @@
 import UIKit
 
 protocol RegisterViewControllerProtocol: class {
+    func messageFromPresenter(title: String, message: String)
 }
 
 class RegisterViewController: BaseViewController<RegisterPresenterProtocol>, RegisterViewControllerProtocol {
@@ -35,7 +36,7 @@ class RegisterViewController: BaseViewController<RegisterPresenterProtocol>, Reg
     }
 
     func setupUI() {
-        cornerRadius = emailCustomRoundedTextField.bounds.height/2
+        cornerRadius = emailCustomRoundedTextField.bounds.height / 2
         emailCustomRoundedTextField.setupCustomTextField(title: "", placeHolder: "Email", backgroundColor: .white, titleColor: .black, cornerRadius: cornerRadius, shadowColor: UIColor.darkGray.cgColor, shadowOpacity: 10, shadowOffset: CGSize(width: 10, height: 10), shadowRadius: 10)
         passwordCustomRoundedTextField.setupCustomTextField(title: "", placeHolder: "Password", backgroundColor: .white, titleColor: .black, cornerRadius: cornerRadius, shadowColor: UIColor.darkGray.cgColor, shadowOpacity: 10, shadowOffset: CGSize(width: 10, height: 10), shadowRadius: 10)
         customRegisterButton.setupCustomButton(title: "Register", backgroundColor: .orange, titleColor: .black, cornerRadius: cornerRadius, shadowColor: UIColor.darkGray.cgColor, shadowOpacity: 0, shadowOffset: CGSize(width: 10, height: 10), shadowRadius: 10)
@@ -48,9 +49,17 @@ class RegisterViewController: BaseViewController<RegisterPresenterProtocol>, Reg
     }
 }
 
+extension RegisterViewController {
+    func messageFromPresenter(title: String, message: String) {
+        self.message(title: title, message: message)
+    }
+}
+
 extension RegisterViewController: CustomRoundedButtonDelegate {
     func customButtonTapped() {
-        guard let email = emailValidated, let password = passwordValidated else { return }
+        guard let email = emailValidated, let password = passwordValidated else {
+            return
+        }
         self.presenter?.registerWithValidationPassed(email: email, password: password)
     }
 }

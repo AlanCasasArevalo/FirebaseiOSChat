@@ -28,9 +28,11 @@ class RegisterPresenter: BasePresenter<RegisterViewControllerProtocol, RegisterR
 
     func registerWithValidationPassed(email: String, password: String) {
         FirebaseManager.shared.createNewUser(withEmail: email, password: password, success: { success in
-            print(success)
+            if (success != nil) {
+                self.view?.messageFromPresenter(title: "Genial!!!", message: "Ya estas registrado")
+            }
         }, failure: { error in
-            print(error)
+            self.view?.messageFromPresenter(title: "Lo sentimos", message: "Hubo algun problema por favor intentalo mas tarde")
         })
     }
 
